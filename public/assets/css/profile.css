@@ -1,0 +1,153 @@
+/* --- Global Style Reset untuk Profile --- */
+body {
+    background-color: #ffffff !important; /* Pakai !important agar menimpa style dari welcome */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.profile-container { 
+    margin-top: 130px; 
+    padding-bottom: 50px; 
+}
+
+/* --- Card Styling --- */
+.glass-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Shadow lebih lembut di bg putih */
+    padding: 25px;
+    border: 1px solid #f0f0f0;
+}
+
+/* --- Inisial Nama Besar --- */
+.avatar-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.avatar-circle-large {
+    width: 120px;
+    height: 120px;
+    background-color: #d48c34; /* Warna Gold Roomly */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    box-shadow: 0 6px 20px rgba(212, 140, 52, 0.2);
+}
+
+.camera-icon {
+    position: absolute; 
+    bottom: 5px; 
+    right: 5px;
+    background: #C19A6B; 
+    color: white;
+    width: 34px; 
+    height: 34px; 
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 14px;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+/* --- Sidebar Menu --- */
+.profile-menu { 
+    list-style: none; 
+    padding: 0; 
+}
+
+.profile-menu li { 
+    margin-bottom: 8px; 
+}
+
+.profile-menu li a, .logout-btn {
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    text-decoration: none; 
+    color: #555;
+    border-radius: 10px; 
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.profile-menu li a i {
+    margin-right: 12px;
+    width: 20px;
+    text-align: center;
+}
+
+.profile-menu li.active a {
+    background: #E8A856; 
+    color: white;
+    box-shadow: 0 4px 12px rgba(232, 168, 86, 0.3);
+}
+
+.profile-menu li a:hover:not(.active) { 
+    background: #fff7ed; 
+    color: #d48c34;
+}
+
+.logout-btn {
+    width: 100%; 
+    border: none; 
+    background: none; 
+    text-align: left;
+    color: #dc3545; 
+    font-weight: 500;
+}
+
+.logout-btn:hover {
+    background: #fff5f5;
+}
+
+/* --- Form Styling --- */
+.input-custom {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    background: #fdfdfd;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.input-custom:focus {
+    border-color: #d48c34;
+    background: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(212, 140, 52, 0.1);
+    outline: none;
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.btn-gold {
+    background: #E8A856; 
+    color: white; 
+    border: none; 
+    border-radius: 10px;
+    padding: 12px 35px; 
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-gold:hover {
+    background: #d48c34; 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(212, 140, 52, 0.2);
+}
+
+hr {
+    border-top: 1px solid #eee;
+    opacity: 1;
+}
